@@ -5,9 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const StatelessComp = () =>{
+  return <p>Stateless functional component</p>
+}
+
+class StatefullComp extends React.Component{
+  render(){
+    return <p>Statefull Component</p>
+  }
+}
+
 root.render(
   <React.StrictMode>
-    <App />
+    <StatefullComp />
   </React.StrictMode>
 );
 
